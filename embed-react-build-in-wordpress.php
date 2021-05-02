@@ -55,7 +55,8 @@ class EmbedReactBuild {
     foreach( $dependencies['data'] as $key => $values ) {
       foreach( $values as $dependency ) {
         $path = array_keys( $dependency )[0];
-        $file = end( explode( '/', $path ) );
+        $path_array = explode( '/', $path );
+        $file = end( $path_array );
         $filename = implode( array_slice( explode( '.', $file), 0, -1 ) );
 
         // enqueue variables
@@ -111,7 +112,8 @@ class EmbedReactBuild {
     // prepare the entrypoints.
     $entrypoints = [];
     foreach( $assets['entrypoints'] as $path ) {
-      $file = explode( '.', end( explode( '/', $path ) ) );
+      $path_array = explode( '/', $path );
+      $file = explode( '.', end( $path_array ) );
 
       // file info
       $filename = array_slice( $file, 0, -1 );
