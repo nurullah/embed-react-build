@@ -39,6 +39,7 @@ class EmbedReactBuild {
     ), $attr ) );
 
     $url = rtrim( $url, '/' );
+    $manifest_url = $url . '/manifest.json';
 
     // validate the url.
     if (! wp_http_validate_url( $url )) {
@@ -76,6 +77,17 @@ class EmbedReactBuild {
         }
       }
     }
+
+    // load manifest.json after runtime.
+    wp_add_inline_script(
+      "react-$application_id-runtime-main",
+      <<<EOL
+        var manifest=document.createElement("link");
+        manifest.rel="manifest";
+        manifest.href="$manifest_url"
+        document.head.append(manifest);
+      EOL
+    );
 
     return "<div id=\"$application_id\"></div>";
   }
