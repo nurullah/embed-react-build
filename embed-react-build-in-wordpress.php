@@ -35,15 +35,24 @@ class EmbedReactBuild {
   public function shortcode_callback( $attr ) {
     extract( shortcode_atts( array(
       'application_id' => 'root',
-      'url' => ''
+      'url' => '',
+      'staging_url' => ''
     ), $attr ) );
 
+    // Production URL
     $url = rtrim( $url, '/' );
+
+    // Staging URL
+    if ( isset($_GET['test']) && isset($staging_url) ) {
+        $url = rtrim( $staging_url, '/' );
+    }
+
+    // Manifest URL
     $manifest_url = $url . '/manifest.json';
 
     // validate the url.
     if (! wp_http_validate_url( $url )) {
-        return 'The Build URL is not validated.';
+      return 'The Build URL is not validated.';
     }
 
     // get dependencies.
@@ -111,7 +120,7 @@ class EmbedReactBuild {
 
     // get build assets.
     $response = wp_remote_get( $assets_url );
-    if ( is_wp_error( $response ) ) {
+    if ( is_wp_error( $response ) || $response['response']['code'] !== 200 ) {
         return array(
           'success' => false,
           'message' => 'File `asset-manifest.json` not found at Build URL.'
