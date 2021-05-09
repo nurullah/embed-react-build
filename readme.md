@@ -2,11 +2,11 @@
 
 It is a plugin that allows you to integrate your ReactJS builds into wordpress.
 
-This plugin reads the `asset-manifest.json` file in your ReactJS build and includes it in wordpress and allows you to run your application anywhere in wordpress
+This plugin reads the `asset-manifest.json` file in your ReactJS build and includes it in wordpress and allows you to run your application anywhere in wordpress.
 
-## [Pre-requisites](#pre-requisites)
+## [Prerequisites](#prerequisites)
 
-1. A local [WordPress](https://wordpress.org/support/article/how-to-install-wordpress/) (5.4 or later) instance
+1. A [WordPress](https://wordpress.org/support/article/how-to-install-wordpress/) (5.4 or later).
 2. A ReactJS Build created with the [Create React App](https://create-react-app.dev/) 3.2.0 version or higher.
 
 ## Contributing
