@@ -3,8 +3,8 @@
 /**
  * Plugin Name: Embed React Build in Wordpress
  * Plugin URI: https://github.com/nurullah/embed-react-build-in-wordpress
- * Description: This plugin allows the ReactJS project to work embedded in wordpress.
- * Version: 0.3.0
+ * Description: This plugin allows the ReactJS build to work embedded in wordpress.
+ * Version: 0.4.2
  * Author: Nurullah Sevinctekin
  * Author URI: https://github.com/nurullah/
  * License: GPLv3
@@ -120,7 +120,7 @@ class EmbedReactBuild {
 
     // get build assets.
     $response = wp_remote_get( $assets_url );
-    if ( is_wp_error( $response ) || $response['response']['code'] !== 200 ) {
+    if ( is_wp_error( $response ) || wp_remote_retrieve_response_code( $response) !== 200 ) {
         return array(
           'success' => false,
           'message' => 'File `asset-manifest.json` not found at Build URL.'
