@@ -8,7 +8,7 @@ This plugin reads the `asset-manifest.json` file in your ReactJS build and inclu
 
 1. A [WordPress](https://wordpress.org/support/article/how-to-install-wordpress/) (5.4 or later).
 2. A ReactJS Build created with the [Create React App](https://create-react-app.dev/) 3.2.0 version or higher.
-3. The `PUBLIC_URL` is defined in the `.env` file. For example: https://github.com/nurullah/react-default/blob/master/.env
+3. The `PUBLIC_URL` is defined in the `.env` file. <br /> For example: https://github.com/nurullah/react-default/blob/master/.env
 
 ## Usage
 
