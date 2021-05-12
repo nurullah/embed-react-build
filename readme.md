@@ -24,9 +24,9 @@ You can run your application embedded in wordpress by typing the following short
 
 | Name | Description | Default | Optional? |
 | :--- | :---        | :---:   | :---:     |
-| `application_id` | The name of the container where the React application is mounted. | `root` | |
-| `url` | The URL address of the React Build. | | |
-| `staging_url` | The URL address of the React Staging Build. Once defined, you can access the staging build by typing `?test=true` at the end of the url. | | yes |
+| `application_id` | The name of the container where the React application is mounted. | `root` | required |
+| `url` | The URL address of the React Build. | | required |
+| `staging_url` | The URL address of the React Staging Build. Once defined, you can access the staging build by typing `?test=true` at the end of the url. | | optional |
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
