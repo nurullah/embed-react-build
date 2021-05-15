@@ -1,10 +1,10 @@
 === Embed React Build ===
 Contributors:
-Donate link: https://example.com/
+Donate link: 
 Tags: react, build, embed
 Requires at least: 4.7
 Tested up to: 5.7.1
-Stable tag: 4.3
+Stable tag: 1.0.0
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html

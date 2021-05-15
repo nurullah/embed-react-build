@@ -1,4 +1,4 @@
-# Embed React Build in Wordpress
+# Embed React Build
 
 It is a plugin that allows you to integrate your ReactJS builds into wordpress.
 
@@ -15,8 +15,8 @@ This plugin reads the `asset-manifest.json` file in your ReactJS build and inclu
 You can run your application embedded in wordpress by typing the following shortcode in the Wordpress text editor.
 
 ```
-[embed_react_build 
-  application_id="root" 
+[embed_react_build
+  application_id="root"
   url="https://react-default.netlify.app"]
 ```
 
