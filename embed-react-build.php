@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Embed React Build
- * Plugin URI: https://github.com/nurullah/embed-react-build-in-wordpress
+ * Plugin URI: https://github.com/nurullah/embed-react-build
  * Description: This plugin allows the ReactJS build to work embedded in wordpress.
  * Version: 1.0.0
  * Author: Nurullah Sevinctekin
