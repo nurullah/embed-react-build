@@ -1,10 +1,10 @@
 === Embed React Build ===
 Contributors:
-Donate link: 
+Donate link:
 Tags: react, build, embed
 Requires at least: 4.7
 Tested up to: 5.7.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -51,6 +51,12 @@ In the new versions of the plugin, component/block will be created for page buil
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Readme.txt updated.
+
+= 1.0.0 =
+* Plugin name renamed.
 
 = 0.4.4 =
 * Readme.txt updated.
