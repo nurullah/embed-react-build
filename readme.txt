@@ -3,8 +3,8 @@ Contributors:
 Donate link:
 Tags: react, build, embed
 Requires at least: 4.7
-Tested up to: 5.7.1
-Stable tag: 1.0.1
+Tested up to: 5.8.1
+Stable tag: 1.0.2
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -19,8 +19,8 @@ This plugin reads the `asset-manifest.json` file in your ReactJS build and inclu
 You can run your application embedded in wordpress by typing the following shortcode in the Wordpress text editor.
 
 `
-[embed_react_build
-  application_id="root"
+[embed_react_build 
+  application_id="root" 
   url="https://react-default.netlify.app"]
 `
 
@@ -51,6 +51,9 @@ In the new versions of the plugin, component/block will be created for page buil
 
 
 == Changelog ==
+
+= 1.0.2 =
+* Wordpress 5.8 compability tested.
 
 = 1.0.1 =
 * Readme.txt updated.
